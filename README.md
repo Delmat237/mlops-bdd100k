@@ -1,5 +1,7 @@
 # mlops-bdd100k
 
+![CI](https://github.com/Delmat237/mlops-bdd100k/actions/workflows/ci.yml/badge.svg)
+
 Pipeline MLOps de bout en bout pour un modèle de vision : classification du type
 de scène routière (city street / highway / residential) sur le jeu de données
 BDD100K.
@@ -12,7 +14,7 @@ Projet d'apprentissage réalisé dans le cadre d'une préparation à la recherch
 en vision et MLOps (ENSTA Paris, spécialisation Data & IA).
 
 ## Avancement
-- [ ] Jalon 0 : socle (repo, packaging, tests, CI)
+- [x] Jalon 0 : socle (repo, packaging, tests, CI)
 - [ ] Jalon 1 : reproductibilité (DVC, config, seeds)
 - [ ] Jalon 2 : suivi d'expériences (MLflow)
 - [ ] Jalon 3 : conteneurisation et serving (Docker, FastAPI)
@@ -21,8 +23,9 @@ en vision et MLOps (ENSTA Paris, spécialisation Data & IA).
 - [ ] Jalon 6 : orchestration et ré-entraînement
 
 ## Démarrage rapide
-> À compléter au jalon 0.
 
+    python3 -m venv .venv
+    source .venv/bin/activate
     make install
     make test
 
